@@ -100,11 +100,17 @@ const LCTL_ESC: Action = HoldTap {
     tap: &k(Escape),
 };
 
+const RCTL_QUOT: Action = HoldTap {
+    timeout: 200,
+    hold: &k(RCtrl),
+    tap: &k(Quote),
+};
+
 #[rustfmt::skip]
 pub static LAYERS: keyberon::layout::Layers = &[
     &[
         &[k(Tab),     k(Q), k(W),   k(E),   k(R), k(T),    k(Y),    k(U), k(I),    k(O),    k(P),     k(BSpace)],
-        &[LCTL_ESC,   k(A), k(S),   k(D),   k(F), k(G),    k(H),    k(J), k(K),    k(L),    k(SColon),k(Quote) ],
+        &[LCTL_ESC,   k(A), k(S),   k(D),   k(F), k(G),    k(H),    k(J), k(K),    k(L),    k(SColon),RCTL_QUOT],
         &[k(LShift),  k(Z), k(X),   k(C),   k(V), k(B),    k(N),    k(M), k(Comma),k(Dot),  k(Slash), k(RShift)],
         &[Trans,      Trans,k(LGui),k(LAlt),l(1), k(Space),k(Enter),l(2), k(RAlt), k(BSpace),Trans,    Trans    ],
     ], &[
