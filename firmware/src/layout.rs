@@ -32,7 +32,7 @@ const LSFT_Z: Action = HoldTap {
 };
 
 const RCTL_SCOL: Action = HoldTap {
-    timeout: 250,
+    timeout: 300,
     hold: &k(RCtrl),
     tap: &k(SColon),
 };
