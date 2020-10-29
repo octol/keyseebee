@@ -20,7 +20,7 @@ const RCTL_QUOT: Action = HoldTap {
 };
 
 const LCTL_A: Action = HoldTap {
-    timeout: 200,
+    timeout: 250,
     hold: &k(LCtrl),
     tap: &k(A),
 };
@@ -32,7 +32,7 @@ const LSFT_Z: Action = HoldTap {
 };
 
 const RCTL_SCOL: Action = HoldTap {
-    timeout: 300,
+    timeout: 200,
     hold: &k(RCtrl),
     tap: &k(SColon),
 };
